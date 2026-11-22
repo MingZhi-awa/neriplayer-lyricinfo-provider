@@ -1,0 +1,23 @@
+*.iml
+.gradle
+/local.properties
+
+/.idea/
+/.serena/
+/.kotlin/
+
+.DS_Store
+/.codex-build/
+build/
+**/build/
+/build
+/captures
+hs_err_pid*.log
+replay_pid*.log
+.externalNativeBuild
+.cxx
+local.properties
+/device-testing/
+
+# Local evidence, candidate APKs and device logs; never source inputs
+/artifacts/

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2026 猫羽bot
+  ~ Licensed under the Apache License, Version 2.0
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  -->
+
+<resources>
+    <string name="app_name">音理音理歌词 Provider</string>
+    <string name="xposed_description">ColorOS lockscreen lyrics for NeriPlayer</string>
+    <string name="debug_settings_activity_label">音理音理歌词 Provider 设置</string>
+</resources>
