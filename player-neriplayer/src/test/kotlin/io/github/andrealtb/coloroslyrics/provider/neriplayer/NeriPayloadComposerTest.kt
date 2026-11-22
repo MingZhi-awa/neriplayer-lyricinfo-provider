@@ -9,7 +9,7 @@ package io.github.andrealtb.coloroslyrics.provider.neriplayer
 import io.github.andrealtb.coloroslyrics.provider.core.model.TrackIdentity
 import io.github.andrealtb.coloroslyrics.provider.parser.lrc.model.LyricWord
 import io.github.andrealtb.coloroslyrics.provider.parser.lrc.model.RichLyricLine
-import kotlin.test.Test
+import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertNotNull

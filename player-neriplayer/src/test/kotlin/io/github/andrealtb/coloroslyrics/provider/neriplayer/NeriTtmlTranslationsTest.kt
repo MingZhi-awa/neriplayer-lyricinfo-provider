@@ -8,8 +8,9 @@ package io.github.andrealtb.coloroslyrics.provider.neriplayer
 
 import io.github.andrealtb.coloroslyrics.provider.parser.lrc.model.LyricWord
 import io.github.andrealtb.coloroslyrics.provider.parser.lrc.model.RichLyricLine
-import kotlin.test.Test
+import org.junit.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 class NeriTtmlTranslationsTest {
@@ -52,7 +53,7 @@ class NeriTtmlTranslationsTest {
         )
         val paired = NeriTtmlTranslations.apply(lines, NeriTtmlTranslations.extract(ttml))
         assertEquals("First line", paired[0].secondary)
-        assertEquals(null, paired[1].secondary)
+        assertNull(paired[1].secondary)
     }
 
     @Test
@@ -62,7 +63,7 @@ class NeriTtmlTranslationsTest {
             lines,
             listOf(NeriTtmlTranslations.TranslationLine(10_000L, "First line"))
         )
-        assertEquals(null, paired.single().secondary)
+        assertNull(paired.single().secondary)
     }
 
     @Test

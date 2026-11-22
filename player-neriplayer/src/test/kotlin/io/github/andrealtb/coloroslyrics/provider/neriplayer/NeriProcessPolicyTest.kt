@@ -6,7 +6,7 @@
 
 package io.github.andrealtb.coloroslyrics.provider.neriplayer
 
-import kotlin.test.Test
+import org.junit.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
