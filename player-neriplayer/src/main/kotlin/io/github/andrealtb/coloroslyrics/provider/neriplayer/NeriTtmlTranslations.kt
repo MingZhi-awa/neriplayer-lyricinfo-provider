@@ -62,7 +62,10 @@ object NeriTtmlTranslations {
         if (translations.isEmpty() || lines.isEmpty()) return lines
         val consumed = BooleanArray(translations.size)
         return lines.map { line ->
-            val match = translations.indexOfFirst { !consumed[it] && kotlin.math.abs(it.beginMs - line.begin) <= MATCH_TOLERANCE_MS }
+            val match = translations.indices.firstOrNull { index ->
+                !consumed[index] &&
+                    kotlin.math.abs(translations[index].beginMs - line.begin) <= MATCH_TOLERANCE_MS
+            } ?: -1
             if (match < 0) {
                 line
             } else {
